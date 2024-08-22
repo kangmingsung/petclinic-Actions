@@ -30,9 +30,6 @@ jobs:
     - name: Run SpotBugs
       run: ./gradlew spotbugsMain
 
-  　- name: actions-cloc
-    　uses: maxfie1d/actions-cloc@v1
-
     - name: Publish Checkstyle report
       uses: Juuxel/publish-checkstyle-report@v1
       if: ${{ failure() || success() }}

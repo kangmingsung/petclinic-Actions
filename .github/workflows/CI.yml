@@ -30,10 +30,8 @@ jobs:
     - name: Run SpotBugs
       run: ./gradlew spotbugsMain
 
-    - name: Count lines of code
-      uses: github/gh-actions-cloc@v1
-      with:
-        args: '--by-file --xml --out cloc.xml'
+  　- name: actions-cloc
+    　uses: maxfie1d/actions-cloc@v1
 
     - name: Publish Checkstyle Report
       uses: scacap/action-surefire-report@v1

@@ -27,3 +27,6 @@ jobs:
       with:
         name: cloc-report
         path: cloc-report.txt
+
+    - name: actions-cloc
+      uses: maxfie1d/actions-cloc@v1
